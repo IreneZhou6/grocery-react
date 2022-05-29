@@ -1,6 +1,12 @@
 .banners {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 1.5rem;
+    padding: 3rem 9%;
+}
+
+@media screen and(max-width: 1000px) {
+    .banners {
+        padding: 3rem 2rem;
+    }
 }
