@@ -1,4 +1,4 @@
-import './Slide.scss';
+import './Slide.styles.scss';
 
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
 

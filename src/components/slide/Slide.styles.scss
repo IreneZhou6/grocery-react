@@ -33,9 +33,6 @@
         padding: .8rem 3rem;
         border-radius: 10px;
         font-size: 1.2rem;
-        background: #bac34e;
-        color: #fff;
-        cursor: pointer;
     }
 
     .slide-content {
@@ -60,6 +57,11 @@
             border-radius: 3px;
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
             background-color: #fff;
+        }
+
+        .icon:hover {
+            color: #fff;
+            background-color: #bac34e;
         }
     }
 }

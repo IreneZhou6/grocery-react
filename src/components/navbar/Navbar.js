@@ -3,7 +3,7 @@ import { AiOutlineSearch, AiOutlineShoppingCart, AiOutlineUser } from 'react-ico
 
 import { Router, Route, Link } from 'react-router';
 
-import './Navbar.scss';
+import './Navbar.styles.scss';
 import { useState } from 'react';
 
 export default function Navbar() {
