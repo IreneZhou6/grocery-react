@@ -1,6 +1,5 @@
 .slide {
     position: relative;
-    height: 80vh;
     padding-top: 140px;
     background-image: url(../../assets/home-bg.jpg);
     background-size: cover;
@@ -26,6 +25,17 @@
     h3 {
         line-height: 100px;
         font-size: 4rem;
+    }
+
+    .btn {
+        display: inline-block;
+        width: 200px;
+        padding: .8rem 3rem;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        background: #bac34e;
+        color: #fff;
+        cursor: pointer;
     }
 
     .slide-content {
@@ -54,7 +64,7 @@
     }
 }
 
-@media screen and(max-width: 820px) {
+@media screen and(max-width: 940px) {
     .slide {
         .slide-container {
             margin: 0 1rem;
@@ -81,4 +91,18 @@
     }
 }
 
-@media screen and(max-width: 640px) {}
+@media screen and(max-width: 768px) {
+    .slide {
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        .slide-container {
+            flex-direction: column;
+        }
+
+        .slide-icons {
+            top: 87%;
+            right: 1rem;
+        }
+    }
+}

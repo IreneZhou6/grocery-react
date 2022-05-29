@@ -10,21 +10,39 @@ import { useState } from 'react';
 
 export default function Slide() {
     const Bg = [Bg1, Bg2, Bg3];
-    const [slideImg, setSlideImg] = useState(0);
+
+    const [slideIndex, setSlideIndex] = useState(0);
+
+    function prevIndex() {
+        if (slideIndex <= 0) {
+            setSlideIndex(Bg.length - 1);
+        } else {
+            setSlideIndex(slideIndex - 1);
+        }
+    }
+
+    function nextIndex() {
+        if (slideIndex >= Bg.length - 1) {
+            setSlideIndex(0);
+        } else {
+            setSlideIndex(slideIndex + 1);
+        }
+    }
+
     return (
         <section className='slide'>
             <div className='slide-container'>
                 <div className='slide-content'>
                     <p>fresh and organic</p>
                     <h3>upto 50% off</h3>
-                    <button>Shop Now</button>
+                    <button className='btn'>Shop Now</button>
                 </div>
-                <img src={Bg[slideImg]} alt='青椒' />
+                <img src={Bg[slideIndex]} alt='vegetables' />
             </div>
 
             <div className='slide-icons'>
-                <AiOutlineLeft className="icon" />
-                <AiOutlineRight className="icon" />
+                <AiOutlineLeft className="icon" onClick={prevIndex} />
+                <AiOutlineRight className="icon" onClick={nextIndex} />
             </div>
         </section>
     )

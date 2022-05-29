@@ -4,10 +4,17 @@ import { AiOutlineSearch, AiOutlineShoppingCart, AiOutlineUser } from 'react-ico
 import { Router, Route, Link } from 'react-router';
 
 import './Navbar.scss';
+import { useState } from 'react';
 
 export default function Navbar() {
+    const [nav, setNav] = useState(false);
+
+    function handleNav() {
+        setNav(!nav);
+    }
+
     return (
-        <div className="navbar">
+        <header className="navbar">
             <div className="logo">
                 <BsFillBasketFill className='icon' />
                 <p>Groco</p>
@@ -21,11 +28,19 @@ export default function Navbar() {
                 </ul>
             </div>
             <div className='nav-icons'>
-                <BsList className='icon mobile' />
+                <BsList className='icon mobile' onClick={handleNav} />
                 <AiOutlineSearch className='icon' />
                 <AiOutlineShoppingCart className='icon' />
                 <AiOutlineUser className='icon' />
             </div>
-        </div>
+            <div className={nav ? 'mobile-nav active' : 'mobile-nav'}>
+                <ul>
+                    <li>Home</li>
+                    <li>Shop</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </header>
     )
 }
