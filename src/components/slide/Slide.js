@@ -33,9 +33,9 @@ export default function Slide() {
         <section className='slide'>
             <div className='slide-container'>
                 <div className='slide-content'>
-                    <p>Fresh And Organic</p>
-                    <h3>Upto 50% Off</h3>
-                    <button className='btn'>Shop Now</button>
+                    <p>fresh and organic</p>
+                    <h3>upto 50% off</h3>
+                    <button className='btn'>shop now</button>
                 </div>
                 <img src={Bg[slideIndex]} alt='vegetables' />
             </div>

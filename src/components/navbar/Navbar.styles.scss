@@ -52,6 +52,42 @@
         top: -100vh;
     }
 
+    .login-form {
+        position: absolute;
+        top: 115%;
+        right: -100%;
+        display: flex;
+        flex-direction: column;
+        width: 30rem;
+        padding: 2rem;
+        background-color: #fff;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        font-size: 1.5rem;
+        color: #666;
+
+        .input {
+            margin-top: 1.4rem;
+        }
+
+        .input,
+        button {
+            padding: 1rem 1.2rem;
+        }
+
+        .remember-me {
+            padding: 1rem 0;
+
+            label {
+                padding-left: 1em;
+            }
+        }
+    }
+
+    .login-form.active {
+        right: 2rem;
+        transition: .4s linear;
+    }
 }
 
 @media screen and (max-width: 1000px) {

@@ -1,4 +1,28 @@
 .single-banner {
+    position: relative;
+
+    .banner-content {
+        position: absolute;
+        top: 50%;
+        left: 2rem;
+        transform: translateY(-50%);
+
+        span {
+            color: #666;
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+            padding-top: .5rem;
+            color: #222;
+        }
+
+        .btn {
+            padding: .8rem 2.5rem;
+            margin-top: 1rem;
+        }
+    }
 
     img {
         width: 100%;
