@@ -1,3 +1,32 @@
+问题：使用<BrowserRouter>之后白屏；
+原因：只安装了react-router，没有安装react-router-dom;
+控制台报错：
+Warning: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem.
+
+Uncaught TypeError: dispatcher is null
+    useRef React
+    BrowserRouter index.tsx:151
+    React 11
+    workLoop scheduler.development.js:266
+    flushWork scheduler.development.js:239
+    performWorkUntilDeadline scheduler.development.js:533
+react.development.js:1628
+    useRef React
+    BrowserRouter index.tsx:151
+    React 11
+    performConcurrentWorkOnRoot self-hosted:1162
+    workLoop scheduler.development.js:266
+    flushWork scheduler.development.js:239
+    performWorkUntilDeadline scheduler.development.js:533
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

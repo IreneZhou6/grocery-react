@@ -1,0 +1,19 @@
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+    background-image: url('../../assets/heading-bg.jpg');
+    background-position: center;
+    background-size: cover;
+
+    p {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+}

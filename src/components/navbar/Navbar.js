@@ -1,7 +1,7 @@
 import { BsFillBasketFill, BsList } from 'react-icons/bs';
 import { AiOutlineSearch, AiOutlineShoppingCart, AiOutlineUser } from 'react-icons/ai';
 
-import { Router, Route, Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 import './Navbar.styles.scss';
 import { useState } from 'react';
@@ -26,8 +26,8 @@ export default function Navbar() {
             </div>
             <div className='nav'>
                 <ul>
-                    <li>home</li>
-                    <li>shop</li>
+                    <Link to='/' className='nav-link'>home</Link>
+                    <Link to='/shop' className='nav-link'>shop</Link>
                     <li>about</li>
                     <li>contact</li>
                 </ul>
@@ -40,8 +40,8 @@ export default function Navbar() {
             </div>
             <div className={nav ? 'mobile-nav active' : 'mobile-nav'}>
                 <ul>
-                    <li>home</li>
-                    <li>shop</li>
+                    <Link to='/' className='nav-link'>home</Link>
+                    <Link to='/shop' className='nav-link'>shop</Link>
                     <li>about</li>
                     <li>contact</li>
                 </ul>
@@ -50,7 +50,7 @@ export default function Navbar() {
                 <input type='email' placeholder='enter your email' className='input' />
                 <input type='password' placeholder='enter your password' className='input' />
                 <div className='remember-me'>
-                    <input type='checkbox' id='remember-me' checked />
+                    <input type='checkbox' id='remember-me' />
                     <label htmlFor='remember-me'>remember me</label>
                 </div>
                 <button type='submit' className='btn' >LOGIN</button>

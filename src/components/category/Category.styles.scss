@@ -1,0 +1,36 @@
+.category {
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.2rem 0;
+        margin-bottom: 3rem;
+        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+        width: 100%;
+
+        h2 {
+            font-size: 2.5rem;
+
+            span {
+                color: #bac34e;
+            }
+        }
+
+        a {
+            font-size: 1.5rem;
+        }
+    }
+
+    .category-item-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .category {
+        padding: 1.5rem 1.5rem;
+    }
+}
