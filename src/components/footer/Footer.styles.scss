@@ -11,3 +11,12 @@
         font-size: 2rem;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .footer {
+        a {
+            margin-right: 3rem;
+        }
+    }
+
+}

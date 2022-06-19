@@ -86,7 +86,7 @@
         }
     }
 
-    .login-form.active {
+    .login-form.active-login {
         right: 2rem;
         transition: .4s linear;
     }
@@ -106,7 +106,8 @@
             margin-left: 1rem;
         }
 
-        .nav ul li {
+        .nav ul li,
+        .nav-link {
             margin: 0 2rem;
         }
     }
@@ -125,7 +126,7 @@
             }
         }
 
-        .active {
+        .active-mobile {
             top: 99%;
             left: 0;
             right: 0;
@@ -133,7 +134,9 @@
             border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
             background-color: #fff;
 
-            li {
+            li,
+            .nav-link {
+                display: block;
                 margin: 1rem;
                 padding: 1rem;
                 background: #f3f3f3;

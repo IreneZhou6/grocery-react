@@ -1,0 +1,27 @@
+.product {
+    background: #f3f3f3;
+
+    img {
+        width: 100%;
+    }
+
+    .product-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1rem;
+
+        h3 {
+            font-size: 2.5rem;
+        }
+
+        span {
+            font-size: 2rem;
+        }
+
+        .stars {
+            color: #bac34e;
+        }
+    }
+}

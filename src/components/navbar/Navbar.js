@@ -38,7 +38,7 @@ export default function Navbar() {
                 <AiOutlineShoppingCart className='icon' />
                 <AiOutlineUser className='icon' onClick={handleLogin} />
             </div>
-            <div className={nav ? 'mobile-nav active' : 'mobile-nav'}>
+            <div className={nav ? 'mobile-nav active-mobile' : 'mobile-nav'}>
                 <ul>
                     <Link to='/' className='nav-link'>home</Link>
                     <Link to='/shop' className='nav-link'>shop</Link>
@@ -46,7 +46,7 @@ export default function Navbar() {
                     <li>contact</li>
                 </ul>
             </div>
-            <div className={login ? 'login-form active' : 'login-form'}>
+            <div className={login ? 'login-form active-login' : 'login-form'}>
                 <input type='email' placeholder='enter your email' className='input' />
                 <input type='password' placeholder='enter your password' className='input' />
                 <div className='remember-me'>
