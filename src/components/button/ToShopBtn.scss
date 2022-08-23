@@ -1,0 +1,23 @@
+@mixin btn {
+        padding: .8rem 2.5rem;
+        margin-top: 1rem;
+        border-radius: 3px;
+        background: #bac34e;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover {
+                background: #222;
+        }
+}
+
+.btn {
+        @include btn;
+}
+
+.btn-large {
+        @include btn;
+        display: inline-block;
+        width: 15rem;
+        font-size: 1.7rem;
+}

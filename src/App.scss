@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
-
 // 设置变量
 $middle-screen: 820px;
 $small-screen: 640px;
+
+$color-green: #bac34e;
+$color-white: #fff;
+$color-black: #222;
 
 * {
     margin: 0;
@@ -19,7 +21,6 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
 }
 
 section {
@@ -28,11 +29,11 @@ section {
 
 a {
     text-decoration: none;
-    color: #222;
+    color: $color-black;
     cursor: pointer;
 
     &:hover {
-        color: #bac34e;
+        color: $color-green;
     }
 }
 
@@ -43,20 +44,10 @@ li {
 .icon {
     font-size: 3rem;
     cursor: pointer;
-}
 
-.icon:hover {
-    color: #bac34e;
-}
-
-.btn {
-    background: #bac34e;
-    color: #fff;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background: #222;
+    &:hover {
+        color: $color-green;
+    }
 }
 
 .title {
@@ -72,7 +63,7 @@ li {
         font-size: 2.5rem;
 
         span {
-            color: #bac34e;
+            color: $color-green;
         }
     }
 
@@ -81,7 +72,7 @@ li {
     }
 }
 
-@media screen and(max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     html {
         font-size: 55%;
     }

@@ -7,6 +7,7 @@ import Bg2 from '../../assets/home-img-2.png';
 import Bg3 from '../../assets/home-img-3.png';
 
 import { useState } from 'react';
+import ToShopBtn from '../button/ToShopBtn';
 
 export default function Slide() {
     const Bg = [Bg1, Bg2, Bg3];
@@ -35,7 +36,7 @@ export default function Slide() {
                 <div className='slide-content'>
                     <p>fresh and organic</p>
                     <h3>upto 50% off</h3>
-                    <button className='btn'>shop now</button>
+                    <ToShopBtn btnSize='btn-large' />
                 </div>
                 <img src={Bg[slideIndex]} alt='vegetables' />
             </div>
